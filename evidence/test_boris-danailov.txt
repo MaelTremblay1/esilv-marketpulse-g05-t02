@@ -27,3 +27,14 @@ Untracked files:
         evidence/test_boris-danailov.txt
 
 nothing added to commit but untracked files present (use "git add" to track)
+
+@boris94300 ➜ /workspaces/esilv-marketpulse-g05-t02 (boris-danailov) $ git add evidence/test_boris-danailov.txt
+
+@boris94300 ➜ /workspaces/esilv-marketpulse-g05-t02 (boris-danailov) $ git commit -m "Comit test branch boris danailov"
+[boris-danailov cae8981] Comit test branch boris danailov
+ 1 file changed, 29 insertions(+)
+ create mode 100644 evidence/test_boris-danailov.txt
+
+@boris94300 ➜ /workspaces/esilv-marketpulse-g05-t02 (boris-danailov) $ git status
+On branch boris-danailov
+nothing to commit, working tree clean
