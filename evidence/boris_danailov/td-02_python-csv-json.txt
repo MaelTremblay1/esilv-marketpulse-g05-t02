@@ -1,0 +1,51 @@
+@boris94300 ➜ /workspaces/esilv-marketpulse-g05-t02 (docs/checkpoint-a-boris94300) $ python src/main.py
+=== MarketPulse ===
+
+Market configuration
+Period   : 1 month
+Interval : Daily
+
+Instrument
+AAPL - Apple Inc.
+Observations : 21
+First date   : 2026-09-01
+Last date    : 2026-09-30
+First close  : 250.00 USD
+Last close   : 266.20 USD
+
+Benchmark
+SP500 - S&P 500
+Observations : 21
+First date   : 2026-09-01
+Last date    : 2026-09-30
+First close  : 6600.00
+Last close   : 6742.00
+
+@boris94300 ➜ /workspaces/esilv-marketpulse-g05-t02 (docs/checkpoint-a-boris94300) $ cat data/sample/instruments.json
+{
+  "instrument": {
+    "ticker": "AAPL",
+    "name": "Apple Inc.",
+    "currency": "USD",
+    "market": "NASDAQ"
+  },
+  "benchmark": {
+    "ticker": "SP500",
+    "name": "S&P 500",
+    "currency": "USD",
+    "market": "US"
+  }
+}
+
+@boris94300 ➜ /workspaces/esilv-marketpulse-g05-t02 (docs/checkpoint-a-boris94300) $ head -5 data/sample/prices.csv
+date,ticker,open,high,low,close,volume
+2026-09-01,AAPL,249.20,251.50,248.00,250.00,38000000
+2026-09-01,SP500,6592.00,6615.00,6580.00,6600.00,0
+2026-09-02,AAPL,250.80,252.80,249.60,251.30,39500000
+2026-09-02,SP500,6607.00,6627.00,6595.00,6612.00,0
+
+@boris94300 ➜ /workspaces/esilv-marketpulse-g05-t02 (docs/checkpoint-a-boris94300) $ grep -c AAPL data/sample/prices.csv
+21
+
+@boris94300 ➜ /workspaces/esilv-marketpulse-g05-t02 (docs/checkpoint-a-boris94300) $ grep -c SP500 data/sample/prices.csv
+21
