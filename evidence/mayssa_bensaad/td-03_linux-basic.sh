@@ -1,7 +1,4 @@
 #!/usr/bin/env bash
-# TD-03 - Linux basics (Mayssa Bensaad)
-# Each command is followed by its output, shown as comments.
-# Run from the repository root.
 
 pwd
 # /workspaces/esilv-marketpulse-g05-t02
