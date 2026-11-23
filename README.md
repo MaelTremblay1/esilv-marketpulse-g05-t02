@@ -186,23 +186,51 @@ calculate once
 present many times
 ```
 
-## Canonical runtime
+## How to run
 
-Terminal:
+Current stage (TD01-TD06): the application is a single terminal script, `src/main.py`, that uses only the Python standard library. No installation is needed.
+
+Requirements:
+
+- Python 3 (`python --version`);
+- a terminal opened at the root of the repository (the folder that contains `src/` and `data/`).
+
+From the repository root:
 
 ```bash
 python src/main.py
 ```
 
-Dashboard, introduced in TD11:
+The script reads the starter data in `data/sample/instruments.json` and `data/sample/prices.csv`, then prints:
+
+- the market configuration (period and interval);
+- a summary of the instrument (`AAPL - Apple Inc.`) and of its benchmark (`SP500 - S&P 500`): number of observations, first and last dates, first and last close.
+
+The output starts with:
+
+```text
+=== MarketPulse ===
+
+Market configuration
+Period   : 1 month
+Interval : Daily
+```
+
+The data paths are relative to the repository root. Running the script from another folder, for example `cd src && python main.py`, fails with:
+
+```text
+FileNotFoundError: [Errno 2] No such file or directory: 'data/sample/instruments.json'
+```
+
+In that case, go back to the repository root (`cd ..`) and run `python src/main.py` again.
+
+Later stages add a second runtime command for the Dash dashboard, introduced in TD11:
 
 ```bash
 python src/dashboard.py
 ```
 
-These are the two canonical CORE runtime commands.
-
-The instructor starter repository does not necessarily contain every later-stage student file on day one. Files appear progressively during the lab sequence.
+`src/dashboard.py` does not exist yet. Files appear progressively during the lab sequence. See [Repository evolution](#repository-evolution).
 
 ## Installation
 
