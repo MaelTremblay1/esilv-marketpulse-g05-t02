@@ -3,7 +3,6 @@ import csv
 import json
 
 
-# This file lives in evidence/<my-folder>/, the project root is two levels up.
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DATA_DIR = PROJECT_ROOT / "data" / "sample"
 

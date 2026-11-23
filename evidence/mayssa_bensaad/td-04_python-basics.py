@@ -8,7 +8,6 @@ from module import (
 
 
 def display_market_summary(asset, prices, show_currency=True):
-    """Display a standardized market summary for any instrument or benchmark."""
     first_close = get_first_close(prices)
     last_close = get_last_close(prices)
     currency_suffix = f" {asset.get('currency', '')}" if show_currency else ""
