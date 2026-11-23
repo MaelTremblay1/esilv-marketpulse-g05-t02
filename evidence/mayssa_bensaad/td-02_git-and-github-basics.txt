@@ -1,0 +1,56 @@
+@Mayssa777 ➜ /workspaces/esilv-marketpulse-g05-t02 (mayssa-bensaad) $ python src/main.py
+=== MarketPulse ===
+
+Market configuration
+Period   : 1 month
+Interval : Daily
+
+Instrument
+AAPL - Apple Inc.
+Observations : 21
+First date   : 2026-09-01
+Last date    : 2026-09-30
+First close  : 250.00 USD
+Last close   : 266.20 USD
+
+Benchmark
+SP500 - S&P 500
+Observations : 21
+First date   : 2026-09-01
+Last date    : 2026-09-30
+First close  : 6600.00
+Last close   : 6742.00
+
+@Mayssa777 ➜ /workspaces/esilv-marketpulse-g05-t02 (mayssa-bensaad) $ git branch
+  main
+* mayssa-bensaad
+
+@Mayssa777 ➜ /workspaces/esilv-marketpulse-g05-t02 (mayssa-bensaad) $ git status
+On branch mayssa-bensaad
+Your branch is up to date with 'origin/mayssa-bensaad'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   evidence/mayssa_bensaad/td-03_linux-basic.sh
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	evidence/mayssa_bensaad/module.py
+	evidence/mayssa_bensaad/td-04_python-basics.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+@Mayssa777 ➜ /workspaces/esilv-marketpulse-g05-t02 (mayssa-bensaad) $ git add evidence/mayssa_bensaad/module.py evidence/mayssa_bensaad/td-04_python-basics.py evidence/mayssa_bensaad/td-03_linux-basic.sh
+
+@Mayssa777 ➜ /workspaces/esilv-marketpulse-g05-t02 (mayssa-bensaad) $ git commit -m "docs: add TD-03 and TD-04 Python basics evidence"
+[mayssa-bensaad 803e241] docs: add TD-03 and TD-04 Python basics evidence
+ 3 files changed, 140 insertions(+)
+ create mode 100644 evidence/mayssa_bensaad/module.py
+ create mode 100644 evidence/mayssa_bensaad/td-04_python-basics.py
+
+@Mayssa777 ➜ /workspaces/esilv-marketpulse-g05-t02 (mayssa-bensaad) $ git push -u origin mayssa-bensaad
+To https://github.com/MaelTremblay1/esilv-marketpulse-g05-t02
+   4733329..803e241  mayssa-bensaad -> mayssa-bensaad
+branch 'mayssa-bensaad' set up to track 'origin/mayssa-bensaad'.
+
